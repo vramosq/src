@@ -1,0 +1,1420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <!--  Primera fila, información -->
+        <LinearLayout
+            android:id="@+id/ll_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="center_horizontal"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="@drawable/borders_textview"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="N/A"
+                android:textColor="@color/negro"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="@drawable/borders_textview"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="K"
+                android:textColor="@color/negro"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="@drawable/borders_textview"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="C"
+                android:textColor="@color/negro"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="@drawable/borders_textview"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="M"
+                android:textColor="@color/negro"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="@drawable/borders_textview"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="T"
+                android:textColor="@color/negro"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:background="@drawable/borders_textview"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="F"
+                android:textColor="@color/negro"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_buttons"
+            android:layout_below="@id/ll_info">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Segunda  fila: Hablador externo -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/txt_sup_marc_hab_ext"
+                        android:textColor="@color/negro" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_he_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_he_k"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_he_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_he_m"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_he_t"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_he_f"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Tercera  fila: Hablador Interno -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/txt_sup_marc_hab_int"
+                        android:textColor="@color/negro" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_hi_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_hi_k"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_hi_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_hi_m"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_hi_t"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_hi_f"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Cuarta  fila: Colgantes -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/txt_sup_marc_colgante"
+                        android:textColor="@color/negro" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_co_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_co_k"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_co_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_co_m"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_co_t"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_co_f"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Quinta  fila: Gráfica Puerta -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/txt_sup_marc_graf_puerta"
+                        android:textColor="@color/negro" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_gp_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_gp_k"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_gp_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_gp_m"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_gp_t"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_gp_f"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Sexta  fila: Gráfica Mediana -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/txt_sup_marc_graf_med"
+                        android:textColor="@color/negro" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_gm_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_gm_k"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_gm_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_gm_m"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_gm_t"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_gm_f"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Septima  fila: Gráfica Grande -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/txt_sup_marc_graf_grande"
+                        android:textColor="@color/negro" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_gg_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_gg_k"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_gg_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_gg_m"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_gg_t"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_gg_f"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Octava  fila: Afiche info recarga -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/txt_sup_marc_afiche_info_recarga"
+                        android:textColor="@color/negro" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_air_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_air_k"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_air_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_air_m"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_air_t"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_air_f"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Novena  fila: Afiche Info SIM -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/txt_sup_marc_afiche_info_sim"
+                        android:textColor="@color/negro" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_ais_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_ais_k"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_ais_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_ais_m"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_ais_t"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_ais_f"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Décima  fila: En Urnas -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/txt_sup_marc_en_urnas"
+                        android:textColor="@color/negro" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_eu_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_eu_k"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_eu_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_eu_m"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_eu_t"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_eu_f"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Undécima  fila: Pizarra -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/txt_sup_marc_pizarra"
+                        android:textColor="@color/negro" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_pi_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_pi_k"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_pi_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_pi_m"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_pi_t"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_pi_f"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Duodécima  fila: Pedestal -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/txt_sup_marc_pedestal"
+                        android:textColor="@color/negro" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_pe_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_pe_k"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_pe_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_pe_m"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_pe_t"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_pe_f"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Decimotercera  fila: Rótulo termoformado -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/txt_sup_marc_rot_termoformado"
+                        android:textColor="@color/negro" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_rt_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_rt_k"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_rt_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_rt_m"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_rt_t"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_rt_f"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+
+
+                <!-- Decimocuarta  fila: Floor stick -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/txt_sup_marc_floor_stick"
+                        android:textColor="@color/negro" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_fs_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_fs_k"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_fs_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_fs_m"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_fs_t"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_fs_f"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+
+
+                <!-- Decimoquinta  fila: Lona -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/txt_sup_marc_lona"
+                        android:textColor="@color/negro" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_lo_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_lo_k"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_lo_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_lo_m"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_lo_t"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_lo_f"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Decimosexta  fila: Rótulo -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/txt_sup_marc_rotulo"
+                        android:textColor="@color/negro" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_ro_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_ro_k"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_ro_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_ro_m"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_ro_t"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_ro_f"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Decimosetima  fila: Rótulo -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/txt_sup_marc_microperforado"
+                        android:textColor="@color/negro" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_mi_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_mi_k"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_mi_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_mi_m"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_mi_t"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_pres_marc_mi_f"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_dialog_pres_marca_cancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_cancelar" />
+
+            <Button
+                android:id="@+id/btn_dialog_pres_marca_aceptar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texto_guardar" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

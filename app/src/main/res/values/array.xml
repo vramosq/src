@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_preguntas">
+        <item>P1. ¿De cuales Operadores celulares vende productos y servicios en este negocio?</item>
+        
+        <item>P2. Por favor indiqueme ¿Cuáles de los siguientes productos/servicios vende usted?</item><!-- Cambiada por la P7 -->
+        <item>P3. Podría indicarnos por favor ¿Cuáles distribuidores de productos de telefonía celular lo visitan? Por ejemplo para dejarles material publicitario, tarjetas de recarga, chips,etc</item>
+        <item>P4. Entrevistador por favor evalue el material publicitario presente de kolbi</item>
+        <item>P5. ¿Cómo obtuvo el material publicitario que tiene en este negocio?</item>
+        <item>P6. Podría indicarme ¿Cuáles promociones y/o beneficios le brinda los provedores para usted y su negocio?</item>
+        
+        <item>P7. Podría indicarme por favor ¿Si en este negocio hay  alguno de los siguentes materiales de proveedores de telefonía celular?</item> <!-- Cambiada por la P2 -->
+        <item>P8. ¿Podría indicarme de cuáles marcas de telefonía celular vende chips?</item>
+        <item>P8.1 Aproximadamente, ¿Cuántos chips vendió el día de ayer de cada proveedor?</item>
+        <item>P8.2 ¿Ahora podría indicarme, en el día de ayer cuántos clientes compraron chips?</item>
+        <item>P8.3 Ahora podría indicarme ¿Cuál es el porcentaje de comisión que gana por chip que vende?</item>
+        <item>P8.4 Aproximadamente ¿Cuánto dinero gana por cada chip que vende?</item>
+        <item>P9. ¿Podría indicarme de cuáles marcas de telefonia celular vende tarjetas de recarga prepago?</item>
+        <item>P9.1 Aproximadamente ¿Cuántas tarjetas por denominación vendió el dia de ayer de cada proveedor?</item>
+        <item>P9.2 Ahora podría indicarme el día de ayer, ¿Cuántos clientes compraron tarjetas prepago?</item>
+        <!-- ¿P10? -->
+        <item>P11. ¿Podría indicarme de cuáles marcas de telefonía celular vende recargas de celular a celular?</item>
+        <item>P11.1 Aproximadamente, ¿Cuánta recarga vendió en total el día de ayer para cada proveedor mediante esta modalidad?</item>
+        <item>P11.2 Ahora podría indicarme el día de ayer, ¿Cuántos clientes recargaron vía celular a celular?</item>
+        <item>P12. ¿Podría indicarme de cuáles marcas de telefonía celular vende Recargas automáticas vía internet?</item>
+        <item>P12.1 Aproximadamente ¿Cuánta recarga vendió en total el día de ayer para cada proveedor mediante esta modalidad?</item>
+        <item>P12.2 Ahora podría indicarme el día de ayer, ¿Cuántos clientes recargaron vía internet?</item>
+        <item>P13. Podria indicarme por favor ¿Con cuales compañias distribuidoras de recargas por internet trabaja en su negocio?</item>
+        <item>P13.1 Podria indicarme aproximadamente ¿Cuánto facturó el día de ayer con dichos distribuidores?</item>
+        <item>P14. Para finalizar, me gustaría que me indique ¿si con los proveedores de telefonía celular con los que mantiene relaciones, tuvo que firmar algún contrato de afiliación?</item>
+		<item>P14.1 ¿Por cuántos meses tuvo que firmar el contrato?</item>
+    </string-array>
+    
+    <string-array name="array_respuestas">
+        <item>kölbi#741#Movistar#742#Claro#743#Tuyo Móvil#744#Full Móvil#745</item>
+        
+        <item>Chip prepago#750#Tarjetas de recarga prepago#749#Recargas vía pin electrónico#748#Recargas de celular a celular#578#Recargas automáticas vía internet#579</item> <!-- Cambiada de la posición 7 -->
+        <item>Punto Naranja#752#Aló Prepago#781#Claro#822#Movistar#742#Grupo Tecnológico#783#Fácil Cargas#794#Voz Prepago#790#Q\'carga#751#Master Pago#782#Pagool#784#Multipagos#785#Altel#795#Conaprosal#823#Intcomex#796#Movistar#821#Particulares (Personas)#824</item>
+        <item>Sucio#732#Roto/Quebrado#733#Arrugado#734#Despintado/Descolorado#735#No es visible(Algo lo tapa)#736#El material está bien / No hay nada malo#737</item>
+        <item>El proveedor se lo va a dejar a su negocio#738#Usted debe ir a recogerlo a alguna agencia/sucursal del proveedor#739#Otros personas externas al proveedor (subcontratistas)#740</item>
+        <item>Incentivo económico por superar un mínimo de venta#746#Tiempo aire o tarjetas prepago para el comerciante#798#Conexión a Internet gratis#747#Renuevan frecuentemente el material publicitario#799#Hacen promociones que generan más ventas#800#Si se supera un mínimo de venta, le regalan viajes, cenas, ropa, celulares, computadoras,etc#801#Le financian computadoras o celulares#802#Porque brindan soporte en momentos de problemas en los sistemas de recargas#803#Otros#692#NS/NR#808</item>
+        
+        <item>Afiches, habladores, calcomanías#729#Rótulos y toldos exteriores#730#El negocio no cuenta con ningún tipo de material publicitario#731</item><!-- Cambiada de la posición 2 -->
+        <item>kölbi#741#Movistar#742#Claro#743#Tuyo Móvil#744#Full Móvil#745</item>
+        <item>kölbi#741#Movistar#742#Claro#743#Tuyo Móvil#744#Full Móvil#745</item>
+        <item>kölbi#741#Movistar#742#Claro#743#Tuyo Móvil#744#Full Móvil#745</item>
+        <item>kölbi#741#Movistar#742#Claro#743#Tuyo Móvil#744#Full Móvil#745</item>
+        <item>kölbi#741#Movistar#742#Claro#743#Tuyo Móvil#744#Full Móvil#745</item>
+        <item>kölbi#741#Movistar#742#Claro#743#Tuyo Móvil#744#Full Móvil#745</item>
+        <item>kölbi#741#Movistar#742#Claro#743#Tuyo Móvil#744#Full Móvil#745</item>
+        <item>kölbi#741#Movistar#742#Claro#743#Tuyo Móvil#744#Full Móvil#745</item>
+        <!-- ¿P10? -->
+        <item>kölbi#741#Movistar#742#Claro#743#Tuyo Móvil#744#Full Móvil#745</item>
+        <item>kölbi#741#Movistar#742#Claro#743#Tuyo Móvil#744#Full Móvil#745</item>
+        <item>kölbi#741#Movistar#742#Claro#743#Tuyo Móvil#744#Full Móvil#745</item>
+        <item>kölbi#741#Movistar#742#Claro#743#Tuyo Móvil#744#Full Móvil#745</item>
+        <item>kölbi#741#Movistar#742#Claro#743#Tuyo Móvil#744#Full Móvil#745</item>
+        <item>kölbi#741#Movistar#742#Claro#743#Tuyo Móvil#744#Full Móvil#745</item>
+        <item>Q\'carga#751#Punto Naranja#752#Aló Prepago#781#Grupo Tecnológico#783#Pagool#784#Multipagos#785#Teledólar Recargas#786#Coco#787#Tu Carguita#788#Punto Celeste#789#Voz Prepago#790#Ticofonía#791#Banco Nacional#792#Banco de Costa Rica#793#Fácil Cargas#794#Altel#795#Intcomex#796#Moviltec#797#Otro#692#Ninguno, no trabajo con proveedores#808</item>
+        <item>Q\'carga#751#Punto Naranja#752#Aló Prepago#781#Grupo Tecnológico#783#Pagool#784#Multipagos#785#Teledólar Recargas#786#Coco#787#Tu Carguita#788#Punto Celeste#789#Voz Prepago#790#Ticofonía#791#Banco Nacional#792#Banco de Costa Rica#793#Fácil Cargas#794#Altel#795#Intcomex#796#Moviltec#797#Otro#692#Ninguno, no trabajo con proveedores#808</item>
+        <item>kölbi#741#Movistar#742#Claro#743#Tuyo Móvil#744#Full Móvil#745</item>
+        <item>kölbi#741#Movistar#742#Claro#743#Tuyo Móvil#744#Full Móvil#745</item>
+    </string-array>
+    
+    <string-array name="array_preguntas_anidadas">
+        <item></item>
+        
+        <item></item> <!-- Cambiada de la posición 7 -->
+        <item>P3.1¿Podría indicarme por favor con qué periodicidad lo visitan estos distribuidores?</item>
+        <item></item>
+        <item>P5.1 ¿De qué operador es esta publicidad?</item>
+        <item>P6.1 ¿De cuáles proveedores recibe promociones y/o beneficios?</item>
+        
+        <item>P7.1 ¿De qué operador es esta publicidad?</item> <!-- Cambiada de la posición 2 -->
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>Digite la cantidad</item>
+        <item></item>
+        <!-- ¿P10? -->
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>¿tuvo que firmar algún contrato de afiliación?</item>
+        <item></item>
+    </string-array>
+    
+    <string-array name="array_respuestas_anidadas">
+        <item></item>
+        
+        <item></item><!-- Cambiada de la posición 7 -->
+        <item>Más de una vez por semana#761#Una vez por semana#762#3 veces al mes#763#2 veces al mes#764#1 vez al mes o menos#765#NS/NR#808</item>
+        <item></item>
+        <item>kölbi#741#Movistar#742#Claro#743#Tuyo Móvil#744#Full Móvil#745</item>
+        <item>kölbi#741#Movistar#742#Claro#743#Tuyo Móvil#744#Full Móvil#745</item>
+        
+        <item>kölbi#741#Movistar#742#Claro#743#Tuyo Móvil#744#Full Móvil#745</item> <!-- Cambiada de la posición 2 -->
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>₡500#766#₡1000#767#₡2500#768#₡5000#769#₡10000#770#Otro#692</item>
+        <item></item>
+        <!-- ¿P10? -->
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>Sí#809#No#810#NS/NR#808</item>
+        <item></item>
+    </string-array>
+    
+    <!-- 
+    Simbología de los estados:
+    u: Pregúnta única.
+    a: Tiene pregunta anidada.
+    s: Pregunta es de selección simple.
+    m: Pregunta es de selección múltiple.
+    x: No hay pregunta.
+    t: Pregunta tiene ingreso de un valor de texto.
+    
+    Simbología de las posiciones:
+    Primer espacio: Indica tipo de pregunta (única o anidada).
+    Segundo espacio: Indica cantidad de opciones seleccionables de la respuesta a la pregunta principal (simple o múltiple).
+    Tercer espacio: Indica cantidad de opciones seleccionables de la respuesta a la pregunta anidada si la hay (simple o múltiple) o si es de ingreso de datos.
+    Cuarto espacio: Indica si la pregunta principal tiene ingreso de datos.
+     -->
+    <string-array name="array_estados_preguntas">
+        <item>u,m,x,x</item>
+        
+        <item>u,m,x,x</item><!-- Cambiada de la posición 7 -->
+        <item>a,m,s,x</item>
+        <item>u,m,x,x</item>
+        <item>a,m,m,x</item>
+        <item>a,m,m,x</item>
+        
+        <item>a,m,m,x</item><!-- Cambiada de la posición 2 -->
+        <item>u,m,x,x</item>
+        <item>u,m,x,t</item>
+        <item>u,m,x,t</item>
+        <item>u,m,x,t</item>
+        <item>u,m,x,t</item>
+        <item>u,m,x,x</item>
+        <item>a,m,t,x</item>
+        <item>u,m,x,t</item>
+        <!-- ¿P10? -->
+        <item>u,m,x,x</item>
+        <item>u,m,x,t</item>
+        <item>u,m,x,t</item>
+        <item>u,m,x,x</item>
+        <item>u,m,x,t</item>
+        <item>u,m,x,t</item>
+        <item>u,m,x,x</item>
+        <item>u,m,x,t</item>
+        <item>a,m,s,x</item>
+        <item>u,m,x,t</item>
+    </string-array>
+    
+    <string-array name="array_codigos_pregunta_principal">
+        <item>372</item>
+        
+        <item>383</item><!-- Cambiada de la posición 7 -->
+        <item>375</item>
+        <item>378</item>
+        <item>379</item>
+        <item>381</item>
+        
+        <item>373</item><!-- Cambiada de la posición 2 -->
+        <item>384</item>
+        <item>385</item>
+        <item>386</item>
+        <item>387</item>
+        <item>388</item>
+        <item>389</item>
+        <item>390</item>
+        <item>391</item>
+        <!-- ¿P10? -->
+        <item>393</item>
+        <item>394</item>
+        <item>395</item>
+        <item>396</item>
+        <item>397</item>
+        <item>398</item>
+        <item>399</item>
+        <item>400</item>
+        <item>401</item>
+		<item>402</item>
+    </string-array>
+    
+    <string-array name="array_codigos_pregunta_secundaria">
+        <item></item>
+        
+        <item></item><!-- Cambiada de la posición 7 -->
+        <item>376</item>
+        <item></item>
+        <item>380</item>
+        <item>382</item>
+        
+        <item>374</item><!-- Cambiada de la posición 2 -->
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>390</item>
+        <item></item>
+        <!-- ¿P10? -->
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>401</item>
+        <item></item>
+    </string-array>
+    
+    <string-array name="array_codigos_pregunta_dependencia">
+        <item>0</item>
+        
+        <item>0</item><!-- Cambiada de la posición 7 -->
+        <item>375</item>
+        <item>0</item>
+        <item>379</item>
+        <item>381</item>
+        
+        <item>373</item><!-- Cambiada de la posición 2 -->
+        <item>0</item>
+        <item>384</item>
+        <item>384</item>
+        <item>384</item>
+        <item>384</item>
+        <item>0</item>
+        <item>389</item>
+        <item>389</item>
+        <!-- ¿P10? -->
+        <item>0</item>
+        <item>393</item>
+        <item>393</item>
+        <item>0</item>
+        <item>396</item>
+        <item>396</item>
+        <item>0</item>
+        <item>399</item>
+        <item>0</item>
+		<item>401</item>
+    </string-array>
+    
+    <!-- Cambios Junio 2014 -->
+    
+    <!-- Array de presencia de marca -->
+    <string-array name="array_preguntas_presencia_marca">
+        <item>1) ¿Podría indicarme de cuales marcas de telefonía celular vende Tarjetas de recarga prepago?</item>
+        <item>2) ¿Podría indicarme de cuales marcas de telefonía celular vende Recargas automáticas vía Internet?</item>
+        <item>3) ¿Podría indicarme de cuales marcas de telefonía celular vende Recarga de Celular a Celular?</item>
+        <item>4) ¿Podría indicarme de cuales marcas de telefonía celular vende recarga vía Pin electrónico?</item>
+    </string-array>
+    
+    <string-array name="array_codigos_preg_presencia_marca">
+        
+<!-- Producción -->
+     	<item>421</item>
+         <item>422</item>
+         <item>423</item>
+         <item>424</item>
+    <!--
+    <item>403</item>
+    <item>404</item>
+    <item>405</item>
+    <item>406</item>
+    -->
+</string-array>
+
+<!-- Cambios Marzo 2015 -->
+    <!-- Opciones para auditores -->
+    <string-array name="array_opciones_auditor">
+        <item>kölbi#EMP1</item>
+        <item>Movistar#EMP2</item>
+        <item>Claro#EMP3</item>
+		<item>TuyoMóvil#EMP4</item>
+		<item>FullMóvil#EMP5</item>
+		<item>Ningún Operador#EMPN</item>
+    </string-array>
+    
+    <string-array name="array_elemetos_auditor">
+        <item>Rótulos o toldos exteriores, hablador polietileno, manta exterior#ROT1</item>
+        <item>Banners, posters, volantes, brouchures, u otros similares con el logo de un proveedor de telefonía#ROT2</item>
+        <item>Mostradores u otros tipo de muebles utilizados para vender teléfonos celulares#ROT4</item>
+        <item>Cabeceras de góndolas de un proveedor de telefonía celular#ROT5</item>
+        <item>Separadores de góndolas de un proveedor de telefonía celular#ROT6</item>
+        <item>Floor sticker (publicidad en el suelo) de un proveedor de telefonía celular#ROT7</item>
+        <item>Gráficas adhesivas internas(10X10 cm, 28X28 cm, y/o 43X55 cm)#ROT8</item>
+        <item>Gráficas adhesivas internas(10X10 cm, 28X28 cm, y/o 43X55 cm)#ROT9</item>
+        <item>El negocio no cuenta con ningún tipo de material publicitario#ROT3</item>
+    </string-array>
+    
+    <string-array name="array_estados_elementos">
+        <item>Arrugado#EST_ROT3</item>
+        <item>Despintado/Descolorado#EST_ROT4</item>
+        <item>El material está bien / No hay nada malo#EST_ROT6</item>
+        <item>Material total o parcialmente despegado#EST_ROT7</item>
+        <item>No es visible(Algo lo tapa)#EST_EST5</item>
+        <item>Otro (negativo)#EST_ROT8</item>
+        <item>Poca visibilidad por tamaño de materiales o cant. de POP otras marcas#EST_ROT9</item>
+        <item>Roto/Quebrado#EST_ROT2</item>
+        <item>Sucio#EST_ROT1</item>
+    </string-array>
+    
+    <string-array name="array_cod_preguntas_auditor">
+        <item>PRE5</item>
+        <item>PRE6</item>
+        <item>PRE7</item>
+    </string-array>
+
+    <!-- Opciones para terceros -->
+    <string-array name="array_opciones_terceros">
+        <item>kölbi#OP_KOLBI</item>
+        <item>Movistar#OP_MOVIS</item>
+        <item>Claro#OP_CLARO</item>
+        <item>TuyoMóvil#OP_TUYO</item>
+        <item>FullMóvil#OP_FMOVIL</item>
+    </string-array>
+
+    <string-array name="array_frec_visita_pdv">
+        <item>Ninguna</item>
+        <item>Mensual</item>
+        <item>Quincenal</item>
+        <item>Semanal</item>
+        <item>+Semanal</item>
+        <item>Llamada</item>
+    </string-array>
+
+    <string-array name="array_entrega_producto">
+        <item>Presencial</item>
+        <item>Encomienda</item>
+        <item>Autogestión</item>
+    </string-array>
+</resources>

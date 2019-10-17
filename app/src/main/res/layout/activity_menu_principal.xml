@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	xmlns:tools="http://schemas.android.com/tools"
+   	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	tools:context=".MenuPrincipalActivity"
+	android:background="@drawable/background" >
+	
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_menu_principal"
+        android:textColor="@color/blanco"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/tamano_texto"
+        android:textStyle="bold" />
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    	android:paddingTop="10dp"
+	    	android:gravity="center" >
+	        <TextView
+	            android:id="@+id/tv_puntos_recarga"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:clickable="true"
+	            android:drawableTop="@drawable/ic_puntos_recarga"
+	            android:gravity="center"
+	            android:onClick="clickHandler"
+	            android:padding="10dp"
+	            android:text="@string/texto_tvPuntosRecarga"
+	            android:textColor="@color/blanco"
+	            android:textSize="@dimen/tamano_texto"
+	            android:textStyle="bold" />
+	        
+	        <TextView
+	            android:id="@+id/tv_espacio1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingRight="80dp"
+	            android:text="" />
+		 </LinearLayout>
+	
+	     <LinearLayout
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    	android:gravity="center" >
+	
+	         <TextView
+	            android:id="@+id/tv_espacio2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingRight="80dp"
+	            android:text="" />
+	         
+	         <TextView
+	             android:id="@+id/tv_rutas"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:clickable="true"
+	             android:drawableTop="@drawable/ic_rutas"
+	             android:gravity="center"
+	             android:onClick="clickHandler"
+	             android:padding="10dp"
+	             android:text="@string/texto_tvRutas"
+	             android:textColor="@color/blanco"
+	             android:textSize="@dimen/tamano_texto"
+	        	android:textStyle="bold"  />
+	     </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

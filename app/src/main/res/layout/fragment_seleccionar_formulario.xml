@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:id="@+id/tv_titulo_seleccionar_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/seleccionar_formulario"
+        android:textColor="@color/blanco" />
+
+    <View
+        android:id="@+id/divisor"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/divisor_horizontal" />
+<!--
+    <Button
+        android:id="@+id/btn_pres_marca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/estilo_botones"
+        android:text="@string/texto_pres_marca" />
+
+    <Button
+        android:id="@+id/btn_auditoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/estilo_botones"
+        android:text="@string/texto_auditoria"
+        android:layout_marginBottom="20dp" />
+-->
+
+    <Button
+        android:id="@+id/btn_terceros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/estilo_botones"
+        android:text="@string/texto_terceros" />
+
+</LinearLayout>

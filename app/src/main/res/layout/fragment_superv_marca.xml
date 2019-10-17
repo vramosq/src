@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.SupervMarcaFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_sup_marc_presencia"
+            android:id="@+id/btn_sup_marc_presencia"
+            android:background="@drawable/estilo_botones"
+            android:layout_marginBottom="15dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_sup_marc_publicidad"
+            android:id="@+id/btn_sup_marc_publicidad"
+            android:background="@drawable/estilo_botones"
+            android:layout_marginBottom="15dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_sup_marc_promocional"
+            android:id="@+id/btn_sup_marc_promocional"
+            android:background="@drawable/estilo_botones"
+            android:layout_marginBottom="15dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_sup_marc_pop"
+            android:id="@+id/btn_sup_marc_pop"
+            android:background="@drawable/estilo_botones"
+            android:layout_marginBottom="15dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_sup_marc_observaciones"
+            android:id="@+id/btn_sup_marc_observaciones"
+            android:background="@drawable/estilo_botones" />
+
+    </LinearLayout>
+
+</FrameLayout>

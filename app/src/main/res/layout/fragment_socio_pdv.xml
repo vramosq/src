@@ -1,0 +1,454 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.ice.sgpr.ui.fragments.SocioPDVFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_frag_socio_save">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:weightSum="1"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/txt_socio"
+                        android:textColor="@color/blanco"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"/>
+
+                    <Spinner
+                        android:id="@+id/spn_spdv_so"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:popupBackground="@color/kolbi_verde_pastel"
+                        android:background="@drawable/spinner_background_holo_light"/>
+                </LinearLayout>
+
+                <!-- RECARGAS -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="2dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/subtitle_terceros_recarga"
+                        android:textColor="@color/blanco" />
+                </LinearLayout>
+
+                <!-- TARJETAS -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="@string/subtitle_terceros_tarjetas"
+                        android:textColor="@color/blanco" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chk_spdv_1a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="false"
+                            android:clickable="true"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Venta tiempo aire -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/subtitle_terceros_vent_tiempo_aire"
+                        android:textColor="@color/blanco" />
+                </LinearLayout>
+
+                <!-- VENTA WEB -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="@string/subtitle_terceros_venta_web"
+                        android:textColor="@color/blanco" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chk_spdv_1b1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:checked="false"
+                            android:clickable="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- VENTA MOVIL -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="@string/subtitle_terceros_venta_movil"
+                        android:textColor="@color/blanco" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chk_spdv_1b2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:checked="false"
+                            android:clickable="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- PIN ELECTRONICO -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="@string/subtitle_terceros_pin_elec"
+                        android:textColor="@color/blanco" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chk_spdv_1c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:checked="false"
+                            android:clickable="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- SIM PREPAGO -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/subtitle_terceros_sim_prepago"
+                        android:textColor="@color/blanco" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chk_spdv_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:checked="false"
+                            android:clickable="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- KIT PREPAGO -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/subtitle_terceros_kit_prepago"
+                        android:textColor="@color/blanco" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chk_spdv_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:checked="false"
+                            android:clickable="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- POSPAGO -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/subtitle_terceros_pospago"
+                        android:textColor="@color/blanco" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chk_spdv_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:checked="false"
+                            android:clickable="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Frecuencia de visita -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:weightSum="1"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/txt_frec_visit"
+                        android:textColor="@color/blanco"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"/>
+
+                    <Spinner
+                        android:id="@+id/spn_spdv_fv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:popupBackground="@color/kolbi_verde_pastel"
+                        android:background="@drawable/spinner_background_holo_light"/>
+                </LinearLayout>
+
+                <!-- Entrega del producto -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:weightSum="1"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/txt_ent_prod"
+                        android:textColor="@color/blanco"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"/>
+
+                    <Spinner
+                        android:id="@+id/spn_spdv_ep"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:popupBackground="@color/kolbi_verde_pastel"
+                        android:background="@drawable/spinner_background_holo_light"/>
+                </LinearLayout>
+
+                <!-- Instala POP -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:weightSum="1"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/txt_inst_pop"
+                        android:textColor="@color/blanco"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"/>
+
+                    <Spinner
+                        android:id="@+id/spn_spdv_ip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:popupBackground="@color/kolbi_verde_pastel"
+                        android:background="@drawable/spinner_background_holo_light"/>
+                </LinearLayout>
+
+                <!-- Observaciones -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:weightSum="1"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/txt_observaciones"
+                        android:textColor="@color/blanco"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"/>
+
+                    <EditText
+                        android:id="@+id/et_spdv_obs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="249"
+                        android:inputType="textMultiLine"
+                        android:lines="7"
+                        android:gravity="top|left"
+                        android:background="@drawable/borde_textview" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <Button
+            android:id="@+id/btn_frag_socio_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/estilo_botones"
+            android:text="@string/texto_guardar"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_pregunta_principal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:text=""
+        android:textColor="@color/blanco" />
+
+    <LinearLayout
+        android:id="@+id/rl_botones_pregunta"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" 
+        android:paddingTop="5dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_boton_anterior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_boton_anterior"
+            android:drawableLeft="@drawable/ic_atras"
+            android:gravity="center"
+            android:textColor="@color/blanco"
+            android:paddingRight="30dp" />
+        
+        <TextView
+            android:id="@+id/tv_boton_salvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_boton_salvar"
+            android:drawableTop="@drawable/ic_salvar"
+            android:textColor="@color/blanco"
+            android:gravity="center"
+            android:paddingRight="30dp" />
+        
+        <TextView
+            android:id="@+id/tv_boton_siguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_boton_siguiente"
+            android:drawableRight="@drawable/ic_siguiente"
+            android:gravity="center"
+            android:textColor="@color/blanco" />
+    </LinearLayout>    
+
+        <TextView
+            android:id="@+id/tv_boton_volver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/rl_botones_pregunta"
+            android:drawableLeft="@drawable/ic_volver"
+            android:text="@string/texto_boton_volver"
+            android:visibility="gone"
+            android:textColor="@color/blanco" />
+        
+    <ListView
+        android:id="@+id/lv_opciones_pregunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_pregunta_principal"
+        android:layout_above="@+id/tv_boton_volver"
+        android:layout_centerHorizontal="true"
+        android:listSelector="@drawable/selector_lista" >
+    </ListView>
+</RelativeLayout>

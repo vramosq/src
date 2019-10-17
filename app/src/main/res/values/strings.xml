@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sgpr</string>
+    <string name="action_settings">Settings</string>
+    <string name="titulo_menu_principal">Sistema de Georefencia de Puntos de Recarga</string>
+    <string name="texto_tvPuntosRecarga">Negocios</string>
+    <string name="texto_tvRutas">Rutas</string>
+    <string name="texto_txtUsuario">Usuario:</string>
+    <string name="texto_txtPassword">Password:</string>
+    <string name="texto_tvLogin">Ingresar</string>
+    <string name="texto_tvRutasAsignadas">Rutas Asignadas</string>
+    <string name="error_tvRutasAsignadas">Es necesario sincronizar</string>
+    <string name="texto_tvIniciarRuta">Iniciar</string>
+    <string name="texto_tvFinalizarRuta">Finalizar</string>
+    <string name="descripcion_imagen">Imagen</string>
+    <string name="texto_ultima_visita_ruta">Última visita:</string>
+    <string name="titulo_informacion_ruta">Información de la ruta</string>
+    <string name="titulo_nombre">Nombre:</string>
+    <string name="titulo_direccion">Dirección:</string>
+    <string name="titulo_telefono">Teléfono:</string>
+    <string name="titulo_email">Email:</string>
+    <string name="titulo_tipo_comercio">Tipo Comercio:</string>
+    <string name="titulo_prioridad">Prioridad:</string>
+    <string name="titulo_nombre_contacto">Nombre Contacto:</string>
+    <string name="titulo_telefono_contacto">Tel. Contacto:</string>
+    <string name="titulo_celular_contacto">Cel. Contacto:</string>
+    <string name="titulo_ultima_visita">Última Visita:</string>
+    <string name="titulo_descripcion_ruta">Descripción:</string>
+    <string name="titulo_bitacora_ruta">Bitácora</string>
+    <string name="titulo_provincia">*Provincia:</string>
+    <string name="titulo_canton">*Cantón:</string>
+    <string name="titulo_distrito">*Distrito:</string>
+    <string name="titulo_sincronizar_ruta">Sincronizar</string>
+    <string name="texto_boton_nuevo">Nuevo</string>
+    <string name="texto_boton_grabar">Grabar</string>
+    <string name="texto_boton_fin_ruta">Fin Negocio</string>
+    <string name="texto_boton_fin_negocio_activo">Finalizar negocio activo</string>
+    <string name="texto_boton_enviar_formulario">Enviar</string>
+    <string name="texto_boton_anterior">Anterior</string>
+    <string name="texto_boton_siguiente">Siguiente</string>
+    <string name="texto_boton_salvar">Salvar</string>
+    <string name="texto_boton_volver">Volver a pregunta principal</string>
+    <string name="texto_boton_agregar_foto">Agregar foto</string>
+    <string name="texto_checkbox_no_respondo">No respondo</string>
+    <string name="texto_logout">Cerrar sesión</string>
+    <string name="texto_imagenes">Imagen</string>
+    <string name="hint_buscador">Nombre del negocio</string>
+    <string name="texto_ingresar_valor">Ingrese el valor</string>
+    <string name="asterisco">*</string>
+    <string name="texto_datos_actualizar">Se actualizarán:\n\n•Información de los comercios\n•Formularios de terceros\n•Bitácoras\n•Imágenes</string>
+    <string name="negocio">Negocio:</string>
+    <string name="texto_menu_descartar_negocio">Descartar negocio</string>
+    <string name="texto_menu_activar_negocio">Habilitar/Deshabilitar negocio</string>
+
+    <!-- Choose image -->
+    <string name="choose_image_title">Agregar foto</string>
+    <string name="choose_image_from_camera">Tomar foto</string>
+    <string name="choose_image_from_gallery">Seleccionar foto</string>
+
+    <!-- Mensajes de error -->
+    <string name="error_http_request">No se puede conectar con el servidor</string>
+    <string name="error_obtener_negocios">No se pudo cargar la lista de negocios.</string>
+
+    <!-- Presencia de marca -->
+    <string name="tipo_pregunta_unica">u</string>
+    <string name="respuestas_presencia_marca">kölbi#741#Movistar#742#Claro#743#Tuyo Móvil#744#Full Móvil#745</string>
+    <string name="titulo_negocio_habilitado">Estado:</string>
+    <string name="texto_negocio_habilitado">Activo</string>
+    <string name="texto_negocio_deshabilitado">Inactivo</string>
+
+    <!-- Opciones de provicia -->
+    <string name="opciones_provincia">San José#98#Alajuela#99#Cartago#100#Heredia#101#Guanacaste#102#Puntarenas#103#Limón#104</string>
+
+    <!-- Pregunta para el auditor -->
+    <string name="pregunta_auditor">¿De cuales Operadores celulares vende productos y servicios en este negocio? Y por favor indique los materiales con los que cuenta.</string>
+    <string name="cod_pregunta_auditor">PRE5</string>
+
+    <string name="seleccionar_formulario">¿Cuál formulario desea completar?</string>
+    <string name="texto_pres_marca">Presencia de marca</string>
+    <string name="texto_auditoria">Auditoría de terceros</string>
+    <string name="texto_terceros">Supervisión Terceros</string>
+
+    <string name="texto_guardar">Guardar</string>
+
+    <string name="texto_activar_seguimiento">Activar seguimiento GPS</string>
+    <string name="texto_desactivar_seguimiento">Desactivar seguimiento GPS</string>
+
+    <string name="operador_movistar">Movistar</string>
+    <string name="operador_claro">Claro</string>
+    <string name="operador_tuyo">Tuyo Movil</string>
+    <string name="operador_full">Full Movil</string>
+    <string name="title_activity_maps_activity_test">Map</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Terceros -->
+
+    <!-- Atencion -->
+    <string name="txt_terceros_fecha">Fecha:</string>
+    <string name="txt_terceros_hora_ini">Hora inicio:</string>
+    <string name="txt_terceros_hora_fin">Hora fin:</string>
+    <string name="txt_terceros_reg_pen">Registrar pendiente</string>
+    <string name="txt_terceros_obs_pen">Observaciones/pendientes:</string>
+    <string name="txt_terceros_supervisa">Supervisa:</string>
+    <string name="txt_terceros_asignar">Asignar a:</string>
+
+    <!-- Supervisión distribuidores -->
+    <string name="title_terceros_productos_disp">Productos disponibles</string>
+    <string name="subtitle_terceros_productos_disp">N/A: No apica, K: kölbi, C: Claro, M: Movistar, T: Tuyomóvil, F: Fullmóvil</string>
+    <string name="title_terceros_intereses">Intereses</string>
+    <string name="title_terceros_pres_operador">Presencia Operador</string>
+    <string name="subtitle_terceros_recarga">1) Recargas:</string>
+    <string name="subtitle_terceros_tarjetas">1A. Tarjetas:</string>
+    <string name="subtitle_terceros_vent_tiempo_aire">1B. Venta tiempo aire:</string>
+    <string name="subtitle_terceros_venta_web">1.B.1 Vta. Web:</string>
+    <string name="subtitle_terceros_venta_movil">1.B.2 Vta. Movil:</string>
+    <string name="subtitle_terceros_pin_elec">1.C Pin electrónico:</string>
+    <string name="subtitle_terceros_sim_prepago">2) SIM prepago:</string>
+    <string name="subtitle_terceros_kit_prepago">3) Kit prepago:</string>
+    <string name="subtitle_terceros_pospago">4) Pospago:</string>
+    <string name="subtitle_terceros_interes">Interés</string>
+
+    <!-- Opciones supervisión de marca -->
+    <string name="title_sup_marc_presencia">Presencia de Marca</string>
+    <string name="title_sup_marc_publicidad">Publicidad</string>
+    <string name="title_sup_marc_promocional">Promocional</string>
+    <string name="title_sup_marc_pop">POP Especial</string>
+    <string name="title_sup_marc_observaciones">Observaciones</string>
+
+    <!-- Presencia de marca -->
+    <string name="txt_sup_marc_hab_ext">Hablador Externo</string>
+    <string name="txt_sup_marc_hab_int">Hablador Interno</string>
+    <string name="txt_sup_marc_colgante">Colgantes</string>
+    <string name="txt_sup_marc_graf_puerta">Gráfica Puerta</string>
+    <string name="txt_sup_marc_graf_med">Gráfica Mediana</string>
+    <string name="txt_sup_marc_graf_grande">Gráfica Grande</string>
+    <string name="txt_sup_marc_afiche_info_recarga">Afiche Info. Recarga</string>
+    <string name="txt_sup_marc_afiche_info_sim">Afiche Info. SIM</string>
+    <string name="txt_sup_marc_en_urnas">En Urnas</string>
+    <string name="txt_sup_marc_pizarra">Pizarra</string>
+    <string name="txt_sup_marc_pedestal">Pedestal</string>
+    <string name="txt_sup_marc_rot_termoformado">Rótulo Termoformado</string>
+    <string name="txt_sup_marc_floor_stick">Floor Stick</string>
+    <string name="txt_sup_marc_lona">Lona</string>
+    <string name="txt_sup_marc_rotulo">Rótulo</string>
+    <string name="txt_sup_marc_microperforado">Microperforado</string>
+    <string name="txt_sup_marc_lib_activacion">Libreta Activación</string>
+    <string name="txt_sup_marc_para_urnas">Para Urnas</string>
+    <string name="txt_sup_marc_pizarra_acrilica">Pizarra Acrílica</string>
+    <string name="txt_sup_marc_triptico">Tríptico</string>
+    <string name="txt_sup_marc_afiches">Afiches / Póster</string>
+    <string name="txt_sup_marc_volantes">Volantes</string>
+    <string name="txt_sup_marc_calendarios">Calendarios</string>
+    <string name="txt_sup_marc_porta_brochure">Porta Brochures</string>
+    <string name="txt_sup_marc_bolsas_papel">Bolsas de Papel</string>
+    <string name="txt_sup_marc_p_termoformada">P. Termoformada</string>
+    <string name="txt_sup_marc_lona_multiuso">Lona Multiuso</string>
+    <string name="txt_sup_marc_p_rotulo_techo">Rótulo Techo</string>
+
+    <string name="txt_aceptar">Aceptar</string>
+    <string name="txt_cancelar">Cancelar</string>
+    <string name="txt_cantidad">Cantidad</string>
+    <string name="txt_status">Estado:</string>
+    <string name="txt_dimension">Dimensión / Observaciones</string>
+
+    <!-- Publicidad -->
+    <string name="txt_sup_marc_publicidad_preg">¿Se realizó instalación de material POP?</string>
+    <string name="txt_sup_marc_publicidad_desc">Motivo de la instalación de material POP</string>
+    <string name="txt_sup_marc_publicidad_no_pop">No tenía ningún POP</string>
+    <string name="txt_sup_marc_publicidad_cambio_pop">Cambio de POP</string>
+    <string name="txt_sup_marc_publicidad_nuevo_art_pop">Nuevo Art. POP</string>
+    <string name="txt_sup_marc_publicidad_motivo_pop">Motivo de la instalación de material POP</string>
+
+    <!-- Promocional -->
+    <string name="txt_sup_marc_promocional_preg">¿Se realizó instalación de material Promocional?</string>
+    <string name="txt_sup_marc_promocional_desc">Motivo de la instalación de material Promocional</string>
+    <string name="txt_sup_marc_promocional_regalia_cliente">Regalía para cliente</string>
+    <string name="txt_sup_marc_promocional_regalia_pdv">Regalía al PDV</string>
+    <string name="txt_sup_marc_promocional_evento">Evento</string>
+    <string name="txt_sup_marc_promocional_motivo_promocional">Motivo de la instalación de material Promocional</string>
+
+    <!-- POP Especial -->
+    <string name="txt_sup_marc_pop_esp_preg">¿Se solicitó POP diferenciada?</string>
+    <!-- Opciones promocional -->
+    <string name="txt_prom_lapices">Lápices</string>
+    <string name="txt_prom_lapiceros">Lapiceros</string>
+    <string name="txt_prom_cuadernos">Cuadernos</string>
+    <string name="txt_prom_libreta_kolbi">Libreta kölbi</string>
+    <string name="txt_prom_reglas">Reglas</string>
+    <string name="txt_prom_salveque">Salveque</string>
+    <string name="txt_prom_antifaz">Antifaz</string>
+    <string name="txt_prom_carpetas">Carpetas</string>
+    <string name="txt_prom_viseras">Viseras</string>
+    <string name="txt_prom_bola_estres">Bola anti-estrés</string>
+    <string name="txt_prom_calentador_vasos">Calentador de vasos</string>
+    <string name="txt_prom_botellas">Botellas</string>
+    <string name="txt_prom_capas">Capas</string>
+    <string name="txt_prom_sombrillas">Sombrillas</string>
+    <string name="txt_prom_vasos_termicos">Vasos Térmicos</string>
+    <string name="txt_prom_gorras">Gorras</string>
+    <string name="txt_prom_camisetas">Camisetas</string>
+    <string name="txt_prom_chalecos">Chalecos</string>
+    <string name="txt_prom_llavero">Llavero</string>
+    <string name="txt_prom_bolso">Bolso</string>
+    <string name="txt_prom_usb">Llave Maya (USB)</string>
+    <string name="txt_prom_cargador">Cargador Portátil</string>
+    <string name="txt_prom_estuche_movil">Estuche Móvil</string>
+    <string name="txt_prom_estuche_tablet">Estuche Tablet</string>
+    <string name="txt_prom_caramanola">Caramañola</string>
+    <string name="txt_prom_balon_futbol">Balón de Fútbol</string>
+    <string name="txt_prom_camiseta_polo">Camiseta polo</string>
+
+    <string name="txt_operador">Operador:</string>
+    <string name="txt_tipo">Tipo:</string>
+    <string name="txt_registrado_por">Registrado Por:</string>
+    <string name="txt_asignado_a">Asignado a:</string>
+    <string name="txt_incidencia">Incidencia:</string>
+    <string name="txt_mejora">Mejora:</string>
+    <string name="txt_info_cargada_explain">*La información fue salvada previamente, puede modificarse la información, pero la hora de fin se mantendrá.</string>
+    <string name="txt_socio">Socio:</string>
+    <string name="txt_frec_visit">Frecuencia de visita:</string>
+    <string name="txt_ent_prod">Entrega de producto:</string>
+    <string name="txt_inst_pop">Instala POP:</string>
+    <string name="txt_observaciones">Observaciones:</string>
+
+    <!-- Preguntas punto de venta -->
+    <string name="txt_p1">1. Indique que servicios kölbi vende en su local</string>
+    <string name="txt_p2">2. Se autogestiona la Recarga de Tiempo Aire</string>
+    <string name="txt_p3">3. El producto fisico (Líneas, Tarjetas o Terminales) se le envía por encomienda</string>
+    <string name="txt_p4">4. En caso de que lo visite un vendedor. Indique la frecuencia de visita para reabastecer el producto (socio)</string>
+    <string name="txt_p5">5. El PDV considera que esa frecuencia de visita es suficiente</string>
+    <string name="txt_p6">6. ¿En cuáles productos / servicios han presentado problemas de abastecimiento? </string>
+    <string name="txt_p7">7. ¿El socio que lo atiende le brinda rotulación kölbi? </string>
+    <string name="txt_p8">8. El estado y la cantidad de Rotulación es la apropiada: (CRITERIO EXPERTO DEL SUPERVISOR) </string>
+    <string name="txt_p9">9. El socio que lo atiende le brinda información acerca de Promociones (Duplica, Triplica, etc.)</string>
+    <string name="txt_p10">10. El socio que lo atiende le brinda información acerca de los productos que el PDV vende</string>
+    <string name="txt_p11">11. El agente le vende unicamente productos de kölbi</string>
+    <string name="txt_p12">12. El agente que el visita cuenta con los siguientes identificadores de la marca kölbi</string>
+    <string name="txt_p13">13. Considera que el sistema de recargas brindado por el comercializador es agil y acorde a sus necesidades</string>
+    <string name="txt_p14">14. Como calificaría la atención de sus consultas y reclamos</string>
+    <string name="txt_p15">15. Como calificaría el servicio en general que le brinda el comercializador que lo atiende</string>
+    <string name="txt_p16">16. Observaciones (Criterio experto Supervisor de Ventas)</string>
+
+    <string name="txt_p1_1">1.1 Líneas</string>
+    <string name="txt_p1_2">1.2 Tarjeta-Pines</string>
+    <string name="txt_p1_3">1.3 Tiempo Aire</string>
+    <string name="txt_p1_4">1.4 Kit Prepago</string>
+    <string name="txt_p1_5">1.5 Postpago</string>
+    <string name="txt_at_com">Atribuible al Comercializador</string>
+    <string name="txt_at_pdv">Atribuible al PDV</string>
+    <string name="txt_especifique">Especifique</string>
+
+    <string name="txt_si">Sí</string>
+    <string name="txt_no">No</string>
+    <string name="txt_na">No aplica</string>
+
+    <string name="txt_4_1">Semanal +</string>
+    <string name="txt_4_2">Semanal</string>
+    <string name="txt_4_3">Quincenal</string>
+    <string name="txt_4_4">Mensual</string>
+    <string name="txt_4_5">PDV Llama</string>
+    <string name="txt_4_6">Ninguna</string>
+
+    <string name="txt_p6_1">6.1 Líneas</string>
+    <string name="txt_p6_2">6.2 Tarjeta-Pines</string>
+    <string name="txt_p6_3">6.3 Tiempo Aire</string>
+    <string name="txt_p6_4">6.4 Kit Prepago</string>
+    <string name="txt_p6_5">6.5 Postpago</string>
+
+    <string name="txt_casi_siempre">Casi siempre</string>
+    <string name="txt_algunas_veces">Algunas veces</string>
+    <string name="txt_casi_nunca">Casi nunca</string>
+
+    <string name="txt_vehi_rotulado">Vehículo rotulado</string>
+    <string name="txt_gafete">Gafete</string>
+    <string name="txt_uniforme">Uniforme</string>
+    <string name="txt_otro">Otro</string>
+
+    <string name="txt_muy_bueno">Muy bueno</string>
+    <string name="txt_bueno">Bueno</string>
+    <string name="txt_regular">Regular</string>
+    <string name="txt_malo">Malo</string>
+    <string name="txt_muy_malo">Muy malo</string>
+</resources>

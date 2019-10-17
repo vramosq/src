@@ -1,0 +1,194 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="10dp"
+    tools:context="com.ice.sgpr.ui.fragments.AtencionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="@string/txt_terceros_fecha"
+                android:textSize="@dimen/tamano_texto"
+                android:textColor="@color/blanco"/>
+
+            <TextView
+                android:id="@+id/txt_atencion_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textSize="@dimen/tamano_texto"
+                android:textColor="@color/blanco" />
+        </LinearLayout>
+
+        <!-- Hora inicio -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="@string/txt_terceros_hora_ini"
+                android:textSize="@dimen/tamano_texto"
+                android:textColor="@color/blanco" />
+
+            <TextView
+                android:id="@+id/txt_atencion_hora_ini"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textSize="@dimen/tamano_texto"
+                android:textColor="@color/blanco" />
+        </LinearLayout>
+
+        <!-- Hora fin -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="@string/txt_terceros_hora_fin"
+                android:textSize="@dimen/tamano_texto"
+                android:textColor="@color/blanco" />
+
+            <TextView
+                android:id="@+id/txt_atencion_hora_fin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="-"
+                android:textSize="@dimen/tamano_texto"
+                android:textColor="@color/blanco" />
+        </LinearLayout>
+
+        <!-- Suprevisa -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:text="@string/txt_terceros_supervisa"
+                android:textColor="@color/blanco"
+                android:textSize="@dimen/tamano_texto"
+                android:layout_weight="0.6"/>
+            <Spinner
+                android:id="@+id/spn_atencion_supervisa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:popupBackground="@color/kolbi_verde_pastel"
+                android:background="@drawable/spinner_background_holo_light" />
+        </LinearLayout>
+
+        <!-- Registrar pendiente -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp" >
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_terceros_reg_pen"
+                android:id="@+id/chk_atencion_rp"
+                android:textColor="@color/blanco" />
+        </LinearLayout>
+
+        <!-- Asignar a -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:text="@string/txt_terceros_asignar"
+                android:textColor="@color/blanco"
+                android:textSize="@dimen/tamano_texto"
+                android:layout_weight="0.6"/>
+            <Spinner
+                android:id="@+id/spn_atencion_asignar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:popupBackground="@color/kolbi_verde_pastel"
+                android:background="@drawable/spinner_background_holo_light" />
+        </LinearLayout>
+
+        <!-- Observaciones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/txt_terceros_obs_pen"
+                android:textSize="@dimen/tamano_texto"
+                android:textColor="@color/blanco" />
+
+            <EditText
+                android:id="@+id/et_atencion_obs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:gravity="top|left"
+                android:maxLength="254"
+                android:textSize="@dimen/tamano_texto"
+                android:background="@drawable/borde_textview"
+                android:textColor="@color/blanco"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_guardar"
+            android:id="@+id/btn_atencion_save"
+            android:layout_gravity="center"
+            android:background="@drawable/estilo_botones" />
+
+        <TextView
+            android:id="@+id/atencion_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:text="@string/txt_info_cargada_explain"
+            android:gravity="center"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</FrameLayout>

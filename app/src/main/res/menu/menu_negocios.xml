@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_activar_negocio"
+          android:title="@string/texto_menu_activar_negocio"
+          app:showAsAction="never"/>
+    <item android:id="@+id/menu_descartar_negocio"
+          android:title="@string/texto_menu_descartar_negocio" />
+</menu>

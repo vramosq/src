@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blanco">#FFFFFF</color>
+    <color name="negro">#000000</color>
+    <color name="kolbi_verde">#00948F</color>
+    <color name="kolbi_verde_claro">#BFD630</color>
+    <color name="kolbi_verde_pastel">#58CECA</color>
+    <color name="transparente">#00000000</color>
+    <color name="blanco_traslucido">#4DFFFFFF</color>
+    <color name="negro_traslucido">#33000000</color>
+    <color name="tab_background">#111111</color>
+</resources>

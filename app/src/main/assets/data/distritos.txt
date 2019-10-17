@@ -1,0 +1,474 @@
+SGPR25_COD_DISTRI_PK,SGPR25_CODI_CAN,SGPR25_NOMBRE
+1470,275,San Ignacio
+1471,275,Guaitil
+1472,275,Palmichal
+1473,275,Cangrejal
+1474,275,Sabanillas
+1475,276,Alajuelita
+1476,276,San Josecito
+1477,276,San Antonio
+1478,276,Concepción
+1479,276,San Felipe
+1480,277,Aserrí
+1481,277,Tarbaca
+1482,277,Vuelta De Jorco
+1483,277,San Gabriel
+1484,277,La Legua
+1485,277,Monterrey
+1486,277,Salitrillos
+1487,278,Curridabat
+1488,278,Granadilla
+1490,278,Tirrases
+1491,279,Desamparados
+1492,279,San Miguel
+1493,279,San Juan De Dios
+1494,279,San Rafael Arriba
+1495,279,San Antonio
+1496,279,Frailes
+1497,279,Patarrá
+1498,279,San Cristóbal
+1500,279,Damas
+1501,279,San Rafael Abajo
+1502,279,Gravillas
+1503,279,Los Guido
+1504,280,Santa María
+1505,280,Jardín
+1506,280,Copey
+1507,281,Escazú
+1508,281,San Antonio
+1509,281,San Rafael
+1510,282,Guadalupe
+1511,282,San Francisco
+1512,282,Calle Blancos
+1513,282,Mata De Plátano
+1514,282,Ipis
+1515,282,Rancho Redondo
+1516,282,Purral
+1517,283,San Pablo
+1518,283,San Andrés
+1520,283,San Isidro
+1521,283,Santa Cruz
+1522,283,San Antonio
+1523,284,San Pedro
+1524,284,Sabanilla
+1525,284,Mercedes
+1526,284,San Rafael
+1527,285,Colón
+1530,285,Piedras Negras
+1531,285,Picagres
+1532,286,San Vicente
+1533,286,San Jerónimo
+1534,286,Trinidad
+1535,287,Sn Isidro De ElGeneral
+1536,287,General
+1537,287,Daniel Flores
+1538,287,Rivas
+1539,287,San Pedro
+1540,287,Platanares
+1541,287,Pejibaye
+1542,287,Cajón
+1543,287,Barú
+1544,287,Río Nuevo
+1545,287,Páramo
+1546,288,Santiago
+1547,288,Mercedes Sur
+1548,288,Barbacoas
+1549,288,Grifo Alto
+1550,288,San Rafael
+1551,288,Candelarita
+1552,288,Desamparaditos
+1553,288,San Antonio
+1554,288,Chires
+1555,289,Carmen
+1556,289,Merced
+1557,289,Hospital
+1558,289,Catedral
+1559,289,Zapote
+1560,289,San Fco D Ríos
+1561,289,Uruca
+1562,289,Mata Redonda
+1563,289,Pavas
+1564,289,Hatillo
+1565,289,San Sebastián
+1566,290,Santa Ana
+1567,290,Salitral
+1568,290,Pozos
+1569,290,Uruca
+1570,290,Piedades
+1571,290,Brasil
+1572,291,San Marcos
+1573,291,San Lorenzo
+1574,291,San Carlos
+1575,292,San Juan
+1576,292,Cinco Esquinas
+1577,292,Anselmo Llorente
+1578,292,León Xlll
+1579,292,Colima
+1580,293,San Pablo
+1581,293,San Pedro
+1582,293,San Juan De Mata
+1583,293,San Luis
+1584,293,Carara
+1585,294,San Isidro
+1586,294,San Rafael
+1587,294,Dulce Nombre
+1588,294,Patalillo
+1589,294,Cascajal
+1590,295,Alajuela
+1591,295,San José
+1592,295,Carrizal
+1593,295,San Antonio
+1594,295,Guácima
+1595,295,San Isidro
+1596,295,Sabanilla
+1597,295,San Rafael
+1598,295,Río Segundo
+1599,295,Desamparados
+1600,295,Turrúcares
+1601,295,Tambor
+1602,295,La Garita
+1604,296,Zarcero
+1605,296,Laguna
+1610,296,Brisas
+1611,297,Atenas
+1612,297,Jesús
+1613,297,Mercedes
+1614,297,San Isidro
+1615,297,Concepción
+1616,297,San José
+1617,297,Santa Eulalia
+1618,297,Escobal
+1619,298,San Rafael
+1620,298,Buenavista
+1621,298,Cote
+1622,298,Katira
+1623,299,Grecia
+1624,299,San Isidro
+1625,299,San José
+1626,299,San Roque
+1627,299,Tacares
+1628,299,Río Cuarto
+1629,299,Puente De Piedra
+1630,299,Bolívar
+1631,300,Los Chiles
+1632,300,Caño Negro
+1635,301,Naranjo
+1636,301,San Miguel
+1637,301,San José
+1638,301,Cirri Sur
+1639,301,San Jerónimo
+1640,301,San Juan
+1641,301,Rosario
+1642,301,Palmitos
+1643,302,Orotina
+1644,302,Mastate
+1645,302,Hacienda Vieja
+1646,302,Coyolar
+1647,302,Ceiba
+1648,303,Palmares
+1649,303,Zaragoza
+1650,303,Buenos Aires
+1651,303,Santiago
+1652,303,Candelaria
+1653,303,Esquipulas
+1654,303,Granja
+1655,304,San Pedro
+1656,304,San Juan
+1657,304,San Rafael
+1658,304,Carrillos
+1659,304,Sabana Redonda
+1660,305,Quesada
+1661,305,Florencia
+1662,305,Buenavista
+1663,305,Aguas Zarcas
+1664,305,Venecia
+1665,305,Pital
+1666,305,Fortuna
+1669,305,Venado
+1670,305,Cutris
+1671,305,Monterrey
+1672,305,Pocosol
+1674,306,Desmonte
+1675,306,Jesús María
+1676,307,San Ramón
+1677,307,Santiago
+1678,307,San Juan
+1679,307,Piedades Norte
+1680,307,Piedades Sur
+1681,307,San Rafael
+1682,307,San Isidro
+1683,307,Ángeles
+1684,307,Alfaro
+1685,307,Volio
+1686,307,Concepción
+1687,307,Zapotal
+1688,307,Peñas Blancas
+1689,308,Upala
+1690,308,Aguas Claras
+1691,308,San José
+1692,308,Bijagua
+1693,308,Delicias
+1696,309,Sarchí Norte
+1697,309,Sarchí Sur
+1698,309,Toro Amarillo
+1699,309,San Pedro
+1700,309,Rodríguez
+1701,310,Pacayas
+1702,310,Cervantes
+1703,310,Capellades
+1704,311,Oriental
+1705,311,Occidental
+1706,311,Carmen
+1707,311,San Nicolas
+1708,311,Aguacaliente
+1709,311,Guadalupe
+1712,311,Dulce Nombre
+1713,311,Llano Grande
+1714,311,Quebradilla
+1715,312,El Tejar
+1716,312,San Isidro
+1717,312,Tobosi
+1718,312,Patio De Agua
+1719,313,Juan Viñas
+1720,313,Tucurrique
+1721,313,Pejibaye
+1722,314,Tres Ríos
+1723,314,San Diego
+1724,314,San Juan
+1725,314,San Rafael
+1726,314,Concepción
+1727,314,Dulce Nombre
+1728,314,San Ramón
+1729,314,Río Azul
+1730,315,San Rafael
+1731,315,Cot
+1732,315,Potrero Cerrado
+1733,315,Cipreses
+1734,315,Santa Rosa
+1735,316,Paraíso
+1736,316,Santiago
+1737,316,Orosi
+1738,316,Cachí
+1739,316,LlanosDe Sta Lucía
+1740,317,Turrialba
+1741,317,La Suiza
+1742,317,Peralta
+1743,317,Santa Cruz
+1744,317,Santa Teresita
+1745,317,Pavones
+1746,317,Tuis
+1747,317,Tayutic
+1748,317,Santa Rosa
+1749,317,Tres Equis
+1750,317,La Isabel
+1751,317,El Chirripó
+1752,318,Barva
+1753,318,San Pedro
+1754,318,San Pablo
+1755,318,San Roque
+1756,318,Santa Lucía
+1757,318,Sn José De La Montaña
+1758,319,San Antonio
+1759,319,La Ribera
+1760,319,Asunción
+1761,320,San Joaquín
+1762,320,Barrantes
+1763,320,Llorente
+1764,321,Heredia
+1765,321,Mercedes
+1766,321,San Francisco
+1767,321,Ulloa
+1768,321,Varablanca
+1769,322,San Isidro
+1770,322,San José
+1771,322,Concepción
+1772,322,San Francisco
+1773,323,San Pablo
+1774,323,Rincón De Sabanilla
+1775,324,San Rafael
+1776,324,San Josecito
+1777,324,Santiago
+1778,324,Los Angeles
+1779,324,Concepción
+1780,325,Santa Bárbara
+1781,325,San Pedro
+1782,325,San Juan
+1783,325,Jesús
+1784,325,Santo Domingo
+1785,325,Purabá
+1786,326,Santo Domingo
+1787,326,San Vicente
+1788,326,San Miguel
+1789,326,Paracito
+1790,326,Santo Tomás
+1791,326,Santa Rosa
+1792,326,Tures
+1793,326,Pará
+1794,327,Puerto Viejo
+1795,327,La Virgen
+1796,327,Horquetas
+1797,327,Llanuras Del Gaspar
+1798,327,Cureña
+1799,328,Las Juntas
+1800,328,Sierra
+1801,328,San Juan
+1802,328,Colorado
+1803,329,Bagaces
+1804,329,Fortuna
+1805,329,Mogote
+1806,329,Río Naranjo
+1807,330,Cañas
+1808,330,Palmira
+1809,330,San Miguel
+1810,330,Bebedero
+1811,330,Porosal
+1812,331,Filadelfia
+1813,331,Palmira
+1814,331,Sardinal
+1815,331,Belén
+1816,332,Hojancha
+1817,332,Monte Romo
+1818,332,Puerto Carrillo
+1819,332,Huacas
+1820,333,La Cruz
+1821,333,Santa Cecilia
+1822,333,La Garita
+1823,333,Santa Elena
+1824,334,Liberia
+1825,334,Cañas Dulces
+1826,334,Mayorga
+1827,334,Nacascolo
+1828,334,Curubandé
+1829,335,Carmona
+1830,335,San Rita
+1831,335,Zapotal
+1832,335,San Pablo
+1833,335,Porvenir
+1834,335,Bejuco
+1835,336,Nicoya
+1836,336,Mansión
+1837,336,San Antonio
+1838,336,Quebrada Honda
+1839,336,Sámara
+1840,336,Nosara
+1841,336,Belén De Nosarita
+1842,337,Santa Cruz
+1843,337,Bolsón
+1844,337,27 DeAbril
+1845,337,Tempate
+1846,337,Cartagena
+1847,337,Cuajiniquil
+1848,337,Diría
+1849,337,Cabo Velas
+1850,337,Tamarindo
+1851,338,Tilarán
+1852,338,Quebrada Grande
+1853,338,Tronadora
+1854,338,Santa Rosa
+1855,338,Líbano
+1856,338,Tierras Morenas
+1857,338,Arenal
+1858,339,Quepos
+1859,339,Savegre
+1860,339,Naranjo
+1861,340,Buenos Aires
+1862,340,Volcán
+1863,340,Potrero Grande
+1864,340,Boruca
+1865,340,Pilas
+1866,340,Colinas
+1867,340,Chánguena
+1868,340,Biolley
+1869,340,Brunka
+1870,341,Corredor
+1871,341,La Cuesta
+1872,341,Canoas
+1873,341,Laurel
+1874,342,San Vito
+1875,342,Sabalito
+1876,342,Aguabuena
+1877,342,Limoncito
+1878,342,Pittier
+1879,343,Espíritu Santo
+1880,343,San Juan Grande
+1881,343,Macacona
+1882,343,San Rafael
+1883,343,San Jerónimo
+1884,344,Jaco
+1885,344,Tarcoles
+1886,345,Golfito
+1887,345,Jiménez
+1888,345,Guaycara
+1889,345,Pavon
+1890,346,Miramar
+1891,346,Unión
+1892,346,San Isidro
+1893,347,Parrita
+1894,348,Puntarenas
+1895,348,Pitahaya
+1896,348,Chomes
+1897,348,Lepanto
+1898,348,Paquera
+1899,348,Manzanillo
+1900,348,Guacimal
+1901,348,Barranca
+1902,348,Monte Verde
+1903,348,Isla Del Coco
+1904,348,Cobano
+1905,348,Chacarita
+1906,348,Chira
+1907,348,Acapulco
+1908,348,El Roble
+1909,348,Arancibia
+1910,349,Cortés
+1911,349,Palmar
+1912,349,Sierpe
+1913,349,Bahía Ballena
+1914,349,Piedras Blancas
+1915,350,Guácimo
+1916,350,Mercedes
+1917,350,Pocora
+1918,350,Río Jiménez
+1919,350,Duacari
+1920,351,Limón
+1921,351,Valle La Estrella
+1922,351,Río Blanco
+1923,351,Matama
+1924,352,Matina
+1925,352,Batán
+1926,352,Carrandi
+1927,353,Guápiles
+1928,353,Jiménez
+1929,353,Rita
+1930,353,Roxana
+1931,353,Cariari
+1932,353,Colorado
+1933,354,Siquirres
+1934,354,Pacuarito
+1935,354,Florida
+1936,354,Germania
+1937,354,Cairo
+1938,354,Alegría
+1939,355,Bratsi
+1940,355,Sixaola
+1941,355,Cahuita
+1942,355,Telire
+1667,305,Tigra
+1668,305,Palmera
+1608,296,Palmira
+1609,296,Zapote
+1633,300,El Amparo
+1634,300,San Jorge
+1710,311,Corralillo
+1711,311,Tierra Blanca
+1499,279,Rosario
+1489,278,Sánchez
+1673,306,San Mateo
+1606,296,Tapezco
+1607,296,Guadalupe
+1694,308,Dos Ríos
+1695,308,Yolillal
+1528,285,Guayabo
+1529,285,Tabarcia
+1519,283,Llano Bonito
+1603,295,Sarapiquí

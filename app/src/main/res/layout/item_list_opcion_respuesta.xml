@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/img_vineta"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_lirio"
+        android:contentDescription="@string/texto_imagenes"
+        android:paddingRight="10dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/tv_texto_opcion_respuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/img_checkbox"
+        android:layout_toRightOf="@+id/img_vineta"
+        android:text=""
+        android:textColor="@color/blanco" />
+    
+    <ImageView
+        android:id="@+id/img_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/selector_fila_negocio"
+        android:contentDescription="@string/texto_imagenes"
+        android:layout_alignParentRight="true" />    
+</RelativeLayout>

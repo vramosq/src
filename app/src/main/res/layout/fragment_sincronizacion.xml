@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/tv_sincronizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_sync"
+        android:text="@string/titulo_sincronizar_ruta"
+        android:textColor="@color/blanco" />
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="30dp"
+	    android:paddingRight="30dp">
+	    <ProgressBar
+	        android:id="@+id/pbar_sincronizando"
+	        style="@style/Sgpr.ProgressBar.Horizontal.Custom"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:max="100" />
+	    
+	    <TextView  
+	       android:id="@+id/tv_progress_amount"  
+	       android:layout_width="fill_parent"  
+	       android:layout_height="wrap_content"  
+	       android:layout_alignBottom="@id/pbar_sincronizando"  
+	       android:background="@android:color/transparent"
+	       android:textColor="@android:color/white"
+	       android:gravity="center" />  
+	</RelativeLayout>
+    <TextView
+        android:id="@+id/tv_info_sincronizando"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blanco"
+        android:text="" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center" >
+        
+        <TextView
+        android:paddingTop="10dp"
+        android:id="@+id/tv_datos_actualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_datos_actualizar"
+        android:textColor="@color/blanco" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_sinc_negociofin_negocio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_fin_formulario"
+        android:gravity="center"
+        android:text="@string/texto_boton_fin_negocio_activo"
+        android:textColor="@color/blanco"
+        android:paddingTop="20dp" />
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/ll_title_audit" >
+
+        <TextView
+            android:id="@+id/tv_nombre_negocio_audit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:text="@string/negocio"
+            android:textColor="@color/blanco"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_nombre_negocio_audit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blanco" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/tv_titulo_form_auditor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/pregunta_auditor"
+        android:textColor="@color/blanco"
+        android:paddingBottom="5dp"
+        android:layout_below="@+id/ll_title_audit" />
+    
+    <View
+	    android:layout_width="fill_parent"
+	    android:id="@+id/divisor"
+	    android:layout_height="1dp"
+	    android:background="@drawable/divisor_horizontal"
+	    android:layout_below="@+id/tv_titulo_form_auditor"
+	    android:layout_marginBottom="5dp"/>
+
+    <ExpandableListView
+        android:id="@+id/elv_formulario_audit"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/divisor" >
+    </ExpandableListView>
+</RelativeLayout>

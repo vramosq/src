@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".LoginActivity"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/tv_titulo_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_menu_principal"
+        android:textColor="@color/blanco"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:gravity="center" />
+
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_texto_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_txtUsuario"
+            android:textSize="@dimen/tamano_texto"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:paddingRight="10dp" />
+
+	    <EditText
+	        android:id="@+id/txt_usuario"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:textColor="@color/blanco"
+	        android:inputType="text" >
+	        <requestFocus />
+	    </EditText>
+	</LinearLayout>
+	
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp">
+	    
+        <TextView
+            android:id="@+id/tv_texto_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_txtPassword"
+            android:textSize="@dimen/tamano_texto"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:paddingRight="10dp" />
+        
+	    <EditText
+	        android:id="@+id/txt_password"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="numberPassword"
+	        android:textColor="@color/blanco"
+	        android:maxLength="4" />
+	</LinearLayout>
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_login"
+        android:clickable="true"
+        android:text="@string/texto_tvLogin"
+        android:gravity="center"
+        android:textColor="@color/blanco"
+        android:textSize="@dimen/tamano_texto" />
+</LinearLayout>

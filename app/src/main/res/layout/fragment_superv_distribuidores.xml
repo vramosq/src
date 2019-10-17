@@ -1,0 +1,1102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.fragments.SupervDistribuidoresFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_frag_sup_terc_sup_dist_save">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blanco_traslucido"
+                    android:padding="15dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_terceros_productos_disp"
+                        android:textColor="@color/blanco"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subtitle_terceros_productos_disp"
+                        android:textColor="@color/blanco"
+                        android:textSize="10sp" />
+                </LinearLayout>
+                <!--  Primera fila, información -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:gravity="center_horizontal"
+                        android:text="@string/title_terceros_pres_operador"
+                        android:textColor="@color/blanco" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="N/A"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="K"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="C"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="M"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="T"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="F"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Segunda fila, 1er subnivel: Recargas -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/subtitle_terceros_recarga"
+                        android:textColor="@color/blanco" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Tercera fila, 1er punto del 1er subnivel: Tarjetas -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="@string/subtitle_terceros_tarjetas"
+                        android:textColor="@color/blanco" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1a_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1a_kolbi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1a_claro"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1a_movistar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1a_tuyo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1a_full"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Cuarta fila, segundo punto del primer subnivel  -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="@string/subtitle_terceros_vent_tiempo_aire"
+                        android:textColor="@color/blanco" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Quinta fila, 3er punto del 1er subnivel: Venta web -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="@string/subtitle_terceros_venta_web"
+                        android:textColor="@color/blanco" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1b1_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1b1_kolbi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1b1_claro"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1b1_movistar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1b1_tuyo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1b1_full"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Sexta fila, 4to punto del 1er subnivel: Venta movil -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="@string/subtitle_terceros_venta_movil"
+                        android:textColor="@color/blanco" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1b2_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1b2_kolbi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1b2_claro"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1b2_movistar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1b2_tuyo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1b2_full"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Septima fila, 5to punto del 1er subnivel: Pin electrónico -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="@string/subtitle_terceros_pin_elec"
+                        android:textColor="@color/blanco" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1c_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1c_kolbi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1c_claro"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1c_movistar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1c_tuyo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_1c_full"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Octava fila, 2do subnivel: SIM prepago -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/subtitle_terceros_sim_prepago"
+                        android:textColor="@color/blanco" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_2_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_2_kolbi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_2_claro"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_2_movistar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_2_tuyo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_2_full"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Novena fila, 3er subnivel: SIM prepago -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/subtitle_terceros_kit_prepago"
+                        android:textColor="@color/blanco" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_3_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_3_kolbi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_3_claro"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_3_movistar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_3_tuyo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_3_full"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Décima fila, 4to subnivel: SIM prepago -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/subtitle_terceros_pospago"
+                        android:textColor="@color/blanco" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_4_na"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_4_kolbi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_4_claro"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_4_movistar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_4_tuyo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+
+                    <CheckBox
+                        android:id="@+id/chk_sup_terc_4_full"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/borders_textview"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Título intereses -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/blanco_traslucido"
+                    android:padding="15dp"
+                    android:text="@string/title_terceros_intereses"
+                    android:textColor="@color/blanco"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center"
+                        android:paddingLeft="1dp"
+                        android:text="@string/subtitle_terceros_interes"
+                        android:textColor="@color/blanco" />
+                </LinearLayout>
+
+                <!-- RECARGAS -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="2dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/subtitle_terceros_recarga"
+                        android:textColor="@color/blanco" />
+                </LinearLayout>
+
+                <!-- TARJETAS -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="@string/subtitle_terceros_tarjetas"
+                        android:textColor="@color/blanco" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chk_sup_terc_1a_in"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="false"
+                            android:clickable="true"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Venta tiempo aire -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/subtitle_terceros_vent_tiempo_aire"
+                        android:textColor="@color/blanco" />
+                </LinearLayout>
+
+                <!-- VENTA WEB -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="@string/subtitle_terceros_venta_web"
+                        android:textColor="@color/blanco" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chk_sup_terc_1b1_in"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:checked="false"
+                            android:clickable="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- VENTA MOVIL -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="@string/subtitle_terceros_venta_movil"
+                        android:textColor="@color/blanco" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chk_sup_terc_1b2_in"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:checked="false"
+                            android:clickable="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- PIN ELECTRONICO -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="@string/subtitle_terceros_pin_elec"
+                        android:textColor="@color/blanco" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chk_sup_terc_1c_in"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:checked="false"
+                            android:clickable="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- SIM PREPAGO -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/subtitle_terceros_sim_prepago"
+                        android:textColor="@color/blanco" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chk_sup_terc_2_in"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:checked="false"
+                            android:clickable="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- KIT PREPAGO -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/subtitle_terceros_kit_prepago"
+                        android:textColor="@color/blanco" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chk_sup_terc_3_in"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:checked="false"
+                            android:clickable="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- POSPAGO -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="2dp"
+                        android:text="@string/subtitle_terceros_pospago"
+                        android:textColor="@color/blanco" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/borders_textview"
+                        android:gravity="center_horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chk_sup_terc_4_in"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:checked="false"
+                            android:clickable="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_frag_sup_terc_sup_dist_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/estilo_botones"
+            android:text="@string/texto_guardar"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</FrameLayout>

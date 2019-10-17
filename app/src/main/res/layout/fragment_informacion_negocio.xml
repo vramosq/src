@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="0dip"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_alignParentTop="true"
+    android:layout_above="@+id/rl_botones" >
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical">
+	
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		    	android:layout_height="match_parent"
+		    	android:orientation="horizontal"
+				android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="0.6"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/tv_obligatorio_nombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/asterisco"
+                        android:textColor="@color/blanco"
+                        android:textSize="@dimen/tamano_texto"/>
+                    <TextView
+                        android:id="@+id/tv_titulo_nombre_negocio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/titulo_nombre"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/blanco"
+                        android:textSize="@dimen/tamano_texto"/>
+                </LinearLayout>
+			    <EditText
+			        android:id="@+id/et_nombre_negocio"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			       	android:inputType="textMultiLine"
+			        android:text=""
+			        android:textSize="@dimen/tamano_texto"
+			        android:textColor="@color/blanco"
+			        android:background="@drawable/edit_text_holo_light"
+					android:layout_weight="0.4"/>
+		    </LinearLayout>
+		    
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+                android:weightSum="1">
+		        
+		        <TextView
+		            android:id="@+id/tv_titulo_provincia"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:paddingRight="10dp"
+		            android:text="@string/titulo_provincia"
+		            android:textColor="@color/blanco"
+		            android:textSize="@dimen/tamano_texto"
+                    android:layout_weight="0.6"/>
+		        
+		        <Spinner
+		            android:id="@+id/spinner_provincia"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.4"
+		            android:popupBackground="@color/kolbi_verde_pastel"
+		            android:background="@drawable/spinner_background_holo_light" />
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+                android:weightSum="1">
+		        
+		        <TextView
+		            android:id="@+id/tv_titulo_canton"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="@string/titulo_canton"
+		            android:textColor="@color/blanco"
+		            android:textSize="@dimen/tamano_texto"
+                    android:layout_weight="0.6"/>
+		        
+		        <Spinner
+		            android:id="@+id/spinner_canton"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.4"
+		            android:popupBackground="@color/kolbi_verde_pastel"
+		            android:background="@drawable/spinner_background_holo_light" />
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+                android:weightSum="1">
+		        
+		        <TextView
+		            android:id="@+id/tv_titulo_distito"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="@string/titulo_distrito"
+		            android:textColor="@color/blanco"
+		            android:textSize="@dimen/tamano_texto"
+                    android:layout_weight="0.6"/>
+		        
+		        <Spinner
+		            android:id="@+id/spinner_distrito"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.4"
+		            android:popupBackground="@color/kolbi_verde_pastel"
+		            android:background="@drawable/spinner_background_holo_light" />
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:orientation="horizontal"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="0.6"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/tv_obligatorio_direccion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/asterisco"
+                        android:textColor="@color/blanco"
+                        android:textSize="@dimen/tamano_texto" />
+                    <TextView
+                        android:id="@+id/tv_titulo_direccion_negocio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/titulo_direccion"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/blanco"
+                        android:textSize="@dimen/tamano_texto" />
+                    </LinearLayout>
+			    <EditText
+			        android:id="@+id/et_direccion_negocio"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:inputType="textMultiLine"
+			        android:textSize="@dimen/tamano_texto"
+			        android:textColor="@color/blanco"
+			        android:background="@drawable/edit_text_holo_light"
+                    android:layout_weight="0.4"/>
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:orientation="horizontal"
+                android:weightSum="1">
+		        <TextView
+			        android:id="@+id/tv_titulo_telefono_negocio"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/titulo_telefono"
+			        android:paddingRight="10dp"
+			        android:textColor="@color/blanco"
+			        android:textSize="@dimen/tamano_texto"
+                    android:layout_weight="0.6"/>
+			    <EditText
+			        android:id="@+id/et_telefono_negocio"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:inputType="number"
+			        android:textSize="@dimen/tamano_texto"
+			        android:maxLength="8"
+			        android:textColor="@color/blanco"
+			        android:background="@drawable/edit_text_holo_light"
+                    android:layout_weight="0.4"/>
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:orientation="horizontal"
+                android:weightSum="1">
+		        <TextView
+			        android:id="@+id/tv_titulo_email_negocio"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/titulo_email"
+			        android:paddingRight="10dp"
+			        android:textColor="@color/blanco"
+			        android:textSize="@dimen/tamano_texto"
+                    android:layout_weight="0.6"/>
+			    <EditText
+			        android:id="@+id/et_email_negocio"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:inputType="textEmailAddress"
+			        android:text=""
+			        android:textSize="@dimen/tamano_texto"
+			        android:maxLength="100"
+			        android:textColor="@color/blanco"
+			        android:background="@drawable/edit_text_holo_light"
+                    android:layout_weight="0.4"/>
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:orientation="horizontal"
+                android:weightSum="1">
+		        <TextView
+			        android:id="@+id/tv_titulo_prioridad_negocio"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/titulo_prioridad"
+			        android:paddingRight="10dp"
+			        android:textColor="@color/blanco"
+			        android:textSize="@dimen/tamano_texto"
+                    android:layout_weight="0.6"/>
+			    <Spinner
+		            android:id="@+id/spinner_prioridad"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.4"
+		            android:popupBackground="@color/kolbi_verde_pastel"
+		            android:background="@drawable/spinner_background_holo_light"
+                    />
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:orientation="horizontal"
+                android:weightSum="1">
+		        <TextView
+			        android:id="@+id/tv_titulo_tipo_negocio"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/titulo_tipo_comercio"
+					android:textColor="@color/blanco"
+					android:textSize="@dimen/tamano_texto"
+                    android:layout_weight="0.6"/>
+			    <Spinner
+		            android:id="@+id/spinner_tipo_negocio"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.4"
+		            android:popupBackground="@color/kolbi_verde_pastel"
+		            android:background="@drawable/spinner_background_holo_light" />
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:orientation="horizontal"
+                android:weightSum="1">
+		        <TextView
+			        android:id="@+id/tv_titulo_descripcion_negocio"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/titulo_descripcion_ruta"
+					android:textColor="@color/blanco"
+					android:textSize="@dimen/tamano_texto"
+                    android:layout_weight="0.6"/>
+			    <EditText
+			        android:id="@+id/et_descripcion_negocio"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:inputType="text"
+			        android:textSize="@dimen/tamano_texto"
+			        android:textColor="@color/blanco"
+			        android:background="@drawable/edit_text_holo_light"
+                    android:layout_weight="0.4"/>
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:orientation="horizontal"
+				android:weightSum="1">
+		        <TextView
+			        android:id="@+id/tv_titulo_nombre_contacto_negocio"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/titulo_nombre_contacto"
+			        android:paddingRight="10dp"
+					android:textColor="@color/blanco"
+					android:textSize="@dimen/tamano_texto"
+					android:layout_weight="0.6"/>
+			    <EditText
+			        android:id="@+id/et_nombre_contacto_negocio"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:inputType="text"
+			        android:text=""
+			        android:textSize="@dimen/tamano_texto"
+			        android:textColor="@color/blanco"
+			        android:background="@drawable/edit_text_holo_light"
+					android:layout_weight="0.4"/>
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:orientation="horizontal"
+                android:weightSum="1">
+		        <TextView
+			        android:id="@+id/tv_titulo_telefono_contacto_negocio"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/titulo_telefono_contacto"
+		         	android:textColor="@color/blanco"
+		         	android:textSize="@dimen/tamano_texto"
+                    android:layout_weight="0.6"/>
+			    <EditText
+			        android:id="@+id/et_telefono_contacto_negocio"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:inputType="number"
+			        android:textSize="@dimen/tamano_texto"
+			        android:maxLength="8"
+			        android:textColor="@color/blanco"
+			        android:background="@drawable/edit_text_holo_light"
+                    android:layout_weight="0.4"/>
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:orientation="horizontal"
+                android:weightSum="1">
+		        <TextView
+			        android:id="@+id/tv_titulo_celular_contacto_negocio"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/titulo_celular_contacto"
+		         	android:textColor="@color/blanco"
+		         	android:textSize="@dimen/tamano_texto"
+                    android:layout_weight="0.6"/>
+			    <EditText
+			        android:id="@+id/et_celular_contacto_negocio"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:inputType="number"
+			        android:textSize="@dimen/tamano_texto"
+			        android:maxLength="8"
+			        android:textColor="@color/blanco"
+			        android:background="@drawable/edit_text_holo_light"
+                    android:layout_weight="0.4"/>
+		    </LinearLayout>
+		    
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:paddingBottom="5dp"
+                android:weightSum="1">
+
+		        <TextView
+		            android:id="@+id/tv_titulo_habilitado"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="@string/titulo_negocio_habilitado"
+		            android:textColor="@color/blanco"
+		            android:textSize="@dimen/tamano_texto"
+                    android:layout_weight="0.6"/>
+
+		        <TextView
+		            android:id="@+id/tv_habilitado"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/blanco"
+		            android:textSize="@dimen/tamano_texto"
+                    android:layout_weight="0.4"/>
+		    </LinearLayout>
+		    
+		    
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:orientation="horizontal"
+                android:weightSum="1">
+		        <TextView
+			        android:id="@+id/tv_titulo_ultima_visita_negocio"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/titulo_ultima_visita"
+			        android:textColor="@color/blanco"
+			        android:textSize="@dimen/tamano_texto"
+                    android:layout_weight="0.6"/>
+			    <TextView
+			        android:id="@+id/tv_ultima_visita_negocio"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="@dimen/tamano_texto"
+			        android:textColor="@color/blanco"
+                    android:layout_weight="0.4"/>
+		    </LinearLayout>		    
+	    </LinearLayout>
+</ScrollView>
+
+<LinearLayout
+    android:id="@+id/rl_botones"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/tv_nuevo_negocio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_nuevo"
+        android:gravity="center"
+        android:text="@string/texto_boton_nuevo"
+        android:textColor="@color/blanco"
+        android:paddingRight="60dp" />
+    
+    <TextView
+        android:id="@+id/tv_grabar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_salvar"
+        android:gravity="center"
+        android:text="@string/texto_boton_grabar"
+        android:textColor="@color/blanco"
+        android:paddingRight="60dp" />
+    
+     <TextView
+        android:id="@+id/tv_fin_negocio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_fin_formulario"
+        android:gravity="center"
+        android:text="@string/texto_boton_fin_ruta"
+        android:textColor="@color/blanco" />
+
+</LinearLayout>
+</RelativeLayout>

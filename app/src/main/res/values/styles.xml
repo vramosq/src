@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Tema barra -->
+    <style name="Theme.SgprTheme" parent="Theme.AppCompat.Light">
+	    <item name="actionBarStyle">@style/Widget.SgprTheme.ActionBar</item>
+	    <item name="android:actionBarStyle">@style/Widget.SgprTheme.ActionBar</item>
+	    
+	    <item name="actionBarTabStyle">@style/Sgpr.ActionBarTabStyle</item>
+	    <item name="android:actionBarTabStyle">@style/Sgpr.ActionBarTabStyle</item>
+	    <item name="actionBarTabTextStyle">@style/Theme.sgpr.ActionBar.TitleTextStyle</item>
+    	<item name="android:actionBarTabTextStyle">@style/Theme.sgpr.ActionBar.TitleTextStyle</item>
+    	
+    	<item name="actionDropDownStyle">@style/Sgpr.DropDownNav</item>
+	    <item name="android:actionDropDownStyle">@style/Sgpr.DropDownNav</item>
+	    
+	    <item name="android:progressBarStyleHorizontal">@style/Sgpr.ProgressBar.Horizontal.Custom</item>
+
+        <item name="android:actionBarTabBarStyle">@style/TabBar</item>
+        <item name="actionBarTabBarStyle">@style/TabBar</item>
+
+        <item name="colorAccent">@color/kolbi_verde_claro</item>
+	</style>
+	
+    <style name="Sgpr.DropDownNav" parent="@android:style/Widget.Holo.Spinner">
+    	<item name="android:popupBackground">@color/negro</item>
+	</style>
+
+	<style name="Widget.SgprTheme.ActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+	    <item name="android:background">@color/kolbi_verde</item>
+	    <item name="background">@color/kolbi_verde</item>
+	    <item name="titleTextStyle">@style/Theme.sgpr.ActionBar.TitleTextStyle</item>
+	</style>
+
+	<!-- Tema tabs -->
+	<style name="Sgpr.ActionBarTabStyle" parent="@style/Widget.AppCompat.Light.ActionBar.TabView">
+	    <item name="android:background">@drawable/tab_selector</item>
+	</style>
+	
+	<!-- Tema tabs -->
+	<style name="Sgpr.ActionBarListStyle" parent="@style/Widget.AppCompat.Light.ActionBar.TabView">
+	    <item name="android:spinnerDropDownItemStyle">@style/myapp.Widget.DropDownItem.Spinner</item>
+	</style>
+	
+	<style name="myapp.Widget.DropDownItem.Spinner" parent="@style/Widget.AppCompat.ActionBar.TabBar">
+    	<item name="android:background">@drawable/tab_selector</item>
+    	<item name="background">@drawable/tab_selector</item>
+	</style>
+	
+	<!-- Color texto tabs -->
+	<style name="Sgpr.TabTextStyle" parent="Widget.AppCompat.ActionBar.TabText" >
+    	<item name="android:textColor">@color/blanco</item>
+	</style>
+	
+	<!-- Color texto titulo -->
+	<style name="Theme.sgpr.ActionBar.TitleTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">@dimen/tamano_texto</item>
+    </style>
+    
+	<!-- Estilo del Radio Button -->
+	<style name="EstiloRadioButton" parent="@android:style/Widget.CompoundButton">
+	    <item name="android:background">@drawable/selector_radiobutton</item>
+	    <item name="android:button">@null</item>
+	</style>
+	
+	<!-- Estilo Dialog -->
+	<style name="AlertDialog" parent="@android:style/Theme.Holo.Dialog">
+	    <item name="android:textColor">@color/blanco</item>
+	    <item name="android:button">@color/blanco</item>
+	    <item name="android:windowFrame">@null</item>
+	    <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowBackground">@color/transparente</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackground">#ffffff</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+    
+	<style name="Sgpr.ProgressBar.Horizontal.Custom" parent="android:Widget.ProgressBar.Horizontal">
+	  <item name="android:indeterminateOnly">false</item>
+      <item name="android:progressDrawable">@drawable/degradado_loading_bar</item>
+    </style>
+
+    <style name="TabBar" parent="@style/Widget.AppCompat.ActionBar.TabBar">
+        <item name="android:background">@color/negro</item>
+        <item name="background">@color/negro</item>
+    </style>
+</resources>

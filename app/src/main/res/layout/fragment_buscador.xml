@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <EditText
+	    android:id="@+id/et_buscar_negocios"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="@string/hint_buscador"
+	    android:maxLines="1"
+	    android:background="@drawable/edit_text_holo_light" >
+   </EditText>
+   
+    <ListView
+        android:layout_below="@+id/et_buscar_negocios"
+        android:id="@+id/lv_buscador_negocios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+    
+    <ImageView
+        android:id="@+id/img_logo_buscador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/descripcion_imagen"
+        android:src="@drawable/kolbi_logo" />
+
+</RelativeLayout>

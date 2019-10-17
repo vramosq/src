@@ -1,0 +1,82 @@
+SGPR24_COD_CANTON_PK,SGPR24_CODI_PROV,SGPR24_NOMBRE
+275,98,Acosta
+276,98,Alajuelita
+277,98,Aserrí
+278,98,Curridabat
+279,98,Desamparados
+280,98,Dota
+281,98,Escazu
+282,98,Goicoechea
+283,98,León Cortés
+284,98,Montes De Oca
+285,98,Mora
+286,98,Moravia
+287,98,Pérez Zeledon
+288,98,Puriscal
+289,98,San Jose
+290,98,Santa Ana
+291,98,Tarrazú
+292,98,Tibás
+293,98,Turrubares
+294,98,Vázquez De Coronado
+295,99,Alajuela
+296,99,Alfaro Ruiz
+297,99,Atenas
+298,99,Guatuso
+299,99,Grecia
+300,99,Los Chiles
+301,99,Naranjo
+302,99,Orotina
+303,99,Palmares
+304,99,Póas
+305,99,San Carlos
+306,99,San Mateo
+307,99,San Ramón
+308,99,Upala
+309,99,Valverde Vega
+310,100,Alvarado
+311,100,Cartago
+312,100,El Guarco
+313,100,Jiménez
+314,100,La Unión
+315,100,Oreamuno
+316,100,Paraíso
+317,100,Turrialba
+318,101,Barva
+319,101,Belén
+320,101,Flores
+321,101,Heredia
+322,101,San Isidro
+323,101,San Pablo
+324,101,San Rafael
+325,101,Santa Bárbara
+326,101,Santo Domingo
+327,101,Sarapiquí
+328,102,Abangares
+329,102,Bagaces
+330,102,Cañas
+331,102,Carrillo
+332,102,Hojancha
+333,102,La Cruz
+334,102,Liberia
+335,102,Nandayure
+336,102,Nicoya
+337,102,Santa Cruz
+338,102,Tilarán
+339,103,Aguirre
+340,103,Buenos Aires
+341,103,Corredores
+342,103,Coto Brus
+343,103,Esparza
+344,103,Garabito
+345,103,Golfito
+346,103,Montes De Oro
+347,103,Parrita
+348,103,Puntarenas
+349,103,Osa
+350,104,Guácimo
+351,104,Limón
+352,104,Matina
+353,104,Pococí
+354,104,Siquirres
+355,104,Talamanca

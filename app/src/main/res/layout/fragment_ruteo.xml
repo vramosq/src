@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_gravity="center"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <TextView
+        android:id="@+id/tv_titulo_rutas_asignadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_tvRutasAsignadas"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/blanco"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/rl_botones"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="5dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/tv_iniciar_ruta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_iniciar"
+            android:paddingLeft="40dp"
+            android:text="@string/texto_tvIniciarRuta"
+            android:gravity="center"
+            android:textColor="@color/blanco"
+            android:paddingRight="80dp"/>
+
+        <TextView
+            android:id="@+id/tv_finalizar_ruta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_fin"
+            android:paddingRight="40dp"
+            android:text="@string/texto_tvFinalizarRuta"
+            android:gravity="center"
+            android:textColor="@color/blanco" />
+    </LinearLayout>
+    
+    <ProgressBar
+           android:id="@+id/progress_bar_rutas"
+           style="?android:attr/progressBarStyle"
+           android:layout_width="wrap_content"
+           android:layout_height="fill_parent" 
+           android:layout_gravity="center"
+           android:visibility="gone"
+           />
+    
+    <ListView
+        android:id="@+id/lv_rutas"
+        android:layout_width="match_parent"
+        android:layout_height="335dp"
+        android:layout_below="@id/tv_titulo_rutas_asignadas"
+        android:layout_above="@id/rl_botones"
+        android:choiceMode="singleChoice"
+        android:descendantFocusability="beforeDescendants"
+        android:listSelector="@drawable/selector_lista"
+        android:dividerHeight="5.0sp"
+        android:divider="@color/transparente" >
+    </ListView>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_ingresar_valor"
+        android:textColor="@color/blanco" />
+
+    <EditText
+        android:id="@+id/et_ingreso_valor"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:background="@drawable/edit_text_holo_light" 
+        android:textColor="@color/blanco" >
+        <requestFocus />
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/chk_no_respondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_checkbox_no_respondo"
+        android:textColor="@color/blanco" />
+
+</LinearLayout>
